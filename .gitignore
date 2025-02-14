@@ -50,6 +50,14 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 cover/
+icons/
+output/
+libs/
+*.pyo
+*.pyc
+tests/
+venv/
+venv1/
 
 # Translations
 *.mo
