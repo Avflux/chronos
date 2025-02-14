@@ -1,11 +1,6 @@
-import win32api
-import json
-import os
-import logging
+import win32api, json, os, ctypes, win32con, logging
 from typing import Tuple
-import ctypes
 from ctypes import wintypes
-import win32con
 
 logger = logging.getLogger(__name__)
 

@@ -1,10 +1,7 @@
-import time
-import threading
+import time, threading, win32api, logging
 from pynput import keyboard
-import win32api
 from ..time.time_observer import TimeObserver
 from datetime import timedelta, datetime
-import logging
 
 logger = logging.getLogger(__name__)
 
@@ -151,6 +148,19 @@ class IdleDetector:
         previous_time = self.accumulated_idle_time
         self.accumulated_idle_time = timedelta()
         logger.info(f"Tempo ocioso resetado. Anterior: {previous_time}")
+
+    def reset_idle_counter(self):
+        """Reseta os contadores de ociosidade"""
+        try:
+            self.last_mouse_activity = time.time()
+            self.last_keyboard_activity = time.time()
+            self.last_mouse_position = win32api.GetCursorPos()
+            self.is_idle = False
+            self.idle_start_time = None
+            self.accumulated_idle_time = timedelta()
+            logger.debug("Contadores de ociosidade resetados")
+        except Exception as e:
+            logger.error(f"Erro ao resetar contadores de ociosidade: {e}")
 
     def stop(self):
         self.running = False

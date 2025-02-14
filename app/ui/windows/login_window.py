@@ -1,11 +1,8 @@
-# Bibliotecas padrão
 import customtkinter as ctk
 from tkinter import messagebox
 from pathlib import Path
 from PIL import Image
 import logging, threading, time, json, os, sys, bcrypt
-
-# Imports locais
 from ...database.connection import DatabaseConnection
 from app.ui.windows.user_window import UserWindow
 from app.ui.windows.admin_window import AdminWindow

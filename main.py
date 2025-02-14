@@ -1,7 +1,6 @@
 import customtkinter as ctk
+import logging, os, sys, win32con, win32gui
 from tkinter import messagebox
-import logging, os, sys
-import win32con, win32gui
 from tendo import singleton
 from app.config.settings import APP_CONFIG, LOG_CONFIG
 from app.ui.windows.login_window import LoginWindow

@@ -1,13 +1,9 @@
-# Bibliotecas padrão
 import tkinter as tk
+import logging, os, sys
 from tkinter import messagebox
-import logging
 from datetime import datetime, time
 from winotify import Notification, audio
-import os, sys
 from typing import Dict
-
-# Imports locais
 from ...database.connection import DatabaseConnection
 from ...config.settings import APP_CONFIG
 from ...core.time.time_manager import TimeManager  # Importando TimeManager para usar suas constantes

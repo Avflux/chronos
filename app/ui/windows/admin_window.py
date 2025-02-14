@@ -1,7 +1,7 @@
 import customtkinter as ctk
+import logging, os, time
 from tkinter import messagebox, filedialog
 from datetime import datetime, timedelta
-import logging
 from ..dialogs.search_dialog import SearchFrame
 from ..dialogs.user_management_dialog import UserManagementFrame
 from ...database.connection import DatabaseConnection
@@ -16,7 +16,6 @@ from ...utils.helpers import BaseWindow
 from ..notifications.notification_manager import NotificationManager
 from app.core.printer.templates.activities_printer import ActivitiesPrinter
 from app.core.printer.query.query_activities import QueryActivities
-import os
 from ..dialogs.activities_printer_dialog import ActivitiesPrinterDialog
 from ..dialogs.dashboard_daily import DashboardDaily
 from ..dialogs.perfil_dialog import PerfilFrame
@@ -97,6 +96,9 @@ class AdminWindow(BaseWindow, TimeObserver):
         # Configurar protocolo de foco
         self.bind('<FocusIn>', self._on_focus_in)
         self.bind('<FocusOut>', self._on_focus_out)
+        
+        # Adicionar atributo para controlar estado da janela
+        self._minimized = False
         
         # Inicializar interface
         self.setup_ui()
@@ -830,43 +832,39 @@ class AdminWindow(BaseWindow, TimeObserver):
         self.total_time_label.configure(text="Total: 00:00:00")
 
     def logout(self):
-        """Realiza o logout do usuário"""
+        """Realiza o logout do administrador"""
         if messagebox.askyesno("Logout", "Deseja realmente sair?"):
             try:
-                # Verifica se há atividade ativa
-                query = """
-                    SELECT id FROM atividades 
-                    WHERE user_id = %s
-                    AND ativo = TRUE 
-                    AND concluido = FALSE
-                    AND pausado = FALSE
-                    LIMIT 1
-                """
-                result = self.db.execute_query(query, (self.user_data['id'],))
+                # Resetar contador de ociosidade
+                if hasattr(self.master, 'idle_detector'):
+                    self.master.idle_detector.reset_idle_counter()
+                    logger.debug("Contador de ociosidade resetado durante logout")
                 
-                if result:
-                    # Se houver atividade ativa, pausa o timer
-                    self.time_manager.pause_activity()
-                    # Atualiza status no banco para pausado
-                    activity_id = result[0]['id']
-                    update_query = """
-                        UPDATE atividades 
-                        SET pausado = TRUE 
-                        WHERE id = %s
-                    """
-                    self.db.execute_query(update_query, (activity_id,))
-                    logger.info(f"Atividade {activity_id} pausada durante logout")
-                    
-                logger.info("Usuário realizou logout")
+                # Primeiro desregistrar observers e limpar outros recursos
+                self.unregister_observers()
+                
+                # Remover o ícone da bandeja antes de fechar a janela
+                if hasattr(self, 'system_tray'):
+                    self.system_tray.cleanup()
+                    time.sleep(0.2)  # Dar tempo para o Windows processar
+                
+                logger.info("Administrador realizou logout")
                 self.master.deiconify()
                 self.destroy()
                 
             except Exception as e:
-                logger.error(f"Erro durante logout: {e}")
+                logger.error(f"Erro durante logout do administrador: {str(e)}")
                 messagebox.showerror("Erro", "Erro ao realizar logout")
 
     def on_close(self):
-            self.system_tray.minimize_to_tray()
+        """Manipula o evento de fechar a janela"""
+        try:
+            logger.debug("Minimizando AdminWindow para bandeja")
+            self._minimized = True
+            if hasattr(self, 'system_tray'):
+                self.system_tray.minimize_to_tray()
+        except Exception as e:
+            logger.error(f"Erro ao minimizar AdminWindow: {e}")
 
     def on_quit(self):
             if messagebox.askyesno("Sair", "Deseja realmente sair do sistema?"):
@@ -1020,22 +1018,21 @@ class AdminWindow(BaseWindow, TimeObserver):
             messagebox.showerror("Erro", "Não foi possível abrir o dashboard")
 
     def destroy(self):
-        """Sobrescreve o método destroy para limpar observadores"""
+        """Sobrescreve o método destroy para limpar recursos"""
         try:
-            # Limpar system tray
+            # Primeiro limpar o system tray
             if hasattr(self, 'system_tray'):
                 self.system_tray.cleanup()
+                time.sleep(0.1)  # Pequeno delay para processamento
             
-            # Limpar observadores
-            if hasattr(self, 'time_manager'):
-                self.time_manager.remove_observer(self)
-            if hasattr(self, 'daily_time_manager'):
-                self.daily_time_manager.remove_observer(self)
-            if hasattr(self, 'base_value_observer'):
-                self.base_value_observer.detach(self)
+            # Remover observadores
+            self.unregister_observers()
+            
+            # Então destruir a janela
+            super().destroy()
         except Exception as e:
-            logger.error(f"Erro ao limpar observadores: {e}")
-        finally:
+            logger.error(f"Erro ao destruir AdminWindow: {e}")
+            # Tentar forçar a destruição mesmo em caso de erro
             super().destroy()
 
     def open_user_management(self):
@@ -1047,3 +1044,62 @@ class AdminWindow(BaseWindow, TimeObserver):
         # Criar e configurar o novo frame
         self.current_frame = UserManagementFrame(self.main_area, self.user_data)
         self.current_frame.pack(expand=True, fill="both", padx=10, pady=10)
+
+    def unregister_observers(self):
+        """Remove todos os observadores registrados de forma segura"""
+        try:
+            # Remover observador do TimeManager
+            if hasattr(self, 'time_manager'):
+                try:
+                    self.time_manager.remove_observer(self)
+                    logger.debug("[OBSERVER] Observador removido do TimeManager")
+                except ValueError:
+                    logger.debug("[OBSERVER] AdminWindow não estava registrado no TimeManager")
+            
+            # Remover observador do DailyTimeManager
+            if hasattr(self, 'daily_time_manager'):
+                try:
+                    self.daily_time_manager.remove_observer(self)
+                    logger.debug("[OBSERVER] Observador removido do DailyTimeManager")
+                except ValueError:
+                    logger.debug("[OBSERVER] AdminWindow não estava registrado no DailyTimeManager")
+            
+            # Remover observador do BaseValueObserver
+            if hasattr(self, 'base_value_observer'):
+                try:
+                    self.base_value_observer.detach(self)
+                    logger.debug("[OBSERVER] Observador removido do BaseValueObserver")
+                except ValueError:
+                    logger.debug("[OBSERVER] AdminWindow não estava registrado no BaseValueObserver")
+            
+            logger.info("[OBSERVER] Processo de remoção de observadores concluído")
+            
+        except Exception as e:
+            logger.error(f"[OBSERVER] Erro inesperado ao remover observadores: {str(e)}", exc_info=True)
+
+    def show_window(self):
+        """Método para mostrar a janela novamente"""
+        try:
+            self._minimized = False
+            self.deiconify()
+            self.lift()
+            self.state('normal')
+            self.focus_force()
+        except Exception as e:
+            logger.error(f"Erro ao mostrar AdminWindow: {e}")
+
+    def withdraw(self):
+        """Sobrescreve o método withdraw para controlar o estado"""
+        try:
+            self._minimized = True
+            super().withdraw()
+        except Exception as e:
+            logger.error(f"Erro ao ocultar AdminWindow: {e}")
+
+    def winfo_exists(self):
+        """Sobrescreve winfo_exists para considerar estado minimizado"""
+        try:
+            exists = super().winfo_exists()
+            return exists and (not self._minimized or hasattr(self, 'system_tray'))
+        except Exception:
+            return False
