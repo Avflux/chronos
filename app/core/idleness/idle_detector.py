@@ -149,19 +149,6 @@ class IdleDetector:
         self.accumulated_idle_time = timedelta()
         logger.info(f"Tempo ocioso resetado. Anterior: {previous_time}")
 
-    def reset_idle_counter(self):
-        """Reseta os contadores de ociosidade"""
-        try:
-            self.last_mouse_activity = time.time()
-            self.last_keyboard_activity = time.time()
-            self.last_mouse_position = win32api.GetCursorPos()
-            self.is_idle = False
-            self.idle_start_time = None
-            self.accumulated_idle_time = timedelta()
-            logger.debug("Contadores de ociosidade resetados")
-        except Exception as e:
-            logger.error(f"Erro ao resetar contadores de ociosidade: {e}")
-
     def stop(self):
         self.running = False
         if hasattr(self, 'keyboard_listener'):

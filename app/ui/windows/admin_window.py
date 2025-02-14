@@ -835,11 +835,6 @@ class AdminWindow(BaseWindow, TimeObserver):
         """Realiza o logout do administrador"""
         if messagebox.askyesno("Logout", "Deseja realmente sair?"):
             try:
-                # Resetar contador de ociosidade
-                if hasattr(self.master, 'idle_detector'):
-                    self.master.idle_detector.reset_idle_counter()
-                    logger.debug("Contador de ociosidade resetado durante logout")
-                
                 # Primeiro desregistrar observers e limpar outros recursos
                 self.unregister_observers()
                 

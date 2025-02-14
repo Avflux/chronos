@@ -1,7 +1,7 @@
 import customtkinter as ctk
-import logging, os, time
 from tkinter import messagebox, filedialog
 from datetime import datetime, timedelta
+import logging, os, time
 from ...database.connection import DatabaseConnection
 from ..components.activities import ActivityForm, ActivityTable, ActivityControls
 from ...core.time.time_manager import TimeManager
@@ -771,11 +771,6 @@ class UserWindow(BaseWindow, TimeObserver):
                     """
                     self.db.execute_query(update_query, (activity_id,))
                     logger.info(f"Atividade {activity_id} pausada durante logout")
-                
-                # Resetar contador de ociosidade
-                if hasattr(self.master, 'idle_detector'):
-                    self.master.idle_detector.reset_idle_counter()
-                    logger.debug("Contador de ociosidade resetado durante logout")
                 
                 # Primeiro desregistrar observers e limpar outros recursos
                 self.unregister_observers()
