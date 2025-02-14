@@ -1,0 +1,373 @@
+2025-02-14 16:00:00,173 - __main__ - INFO - Verificando existência de outra instância do Chronos
+2025-02-14 16:00:00,174 - tendo.singleton - DEBUG - SingleInstance lockfile: C:\Users\WRP\AppData\Local\Temp\j-Adm Tec-Documentos Scaneados-wrp-Documentos-Python-Chronos-main-.lock
+2025-02-14 16:00:00,175 - __main__ - INFO - Nova instância iniciada com sucesso
+2025-02-14 16:00:00,184 - app.utils.window_manager - DEBUG - [WINDOW] Carregou último monitor: [1920, 0, 3840, 1080]
+2025-02-14 16:00:00,299 - app.utils.window_manager - DEBUG - [WINDOW] Login window usando último monitor salvo: [1920, 0, 3840, 1080]
+2025-02-14 16:00:00,300 - app.utils.window_manager - DEBUG - [WINDOW] Posicionando LoginWindow em monitor [1920, 0, 3840, 1080]
+2025-02-14 16:00:00,301 - app.utils.window_manager - DEBUG - [WINDOW] Geometria calculada: 900x600+2430+240
+2025-02-14 16:00:00,417 - PIL.PngImagePlugin - DEBUG - STREAM b'IHDR' 16 13
+2025-02-14 16:00:00,418 - PIL.PngImagePlugin - DEBUG - STREAM b'gAMA' 41 4
+2025-02-14 16:00:00,418 - PIL.PngImagePlugin - DEBUG - STREAM b'cHRM' 57 32
+2025-02-14 16:00:00,418 - PIL.PngImagePlugin - DEBUG - STREAM b'iCCP' 101 2607
+2025-02-14 16:00:00,419 - PIL.PngImagePlugin - DEBUG - iCCP profile name b'ICC Profile'
+2025-02-14 16:00:00,419 - PIL.PngImagePlugin - DEBUG - Compression method 0
+2025-02-14 16:00:00,419 - PIL.PngImagePlugin - DEBUG - STREAM b'pHYs' 2720 9
+2025-02-14 16:00:00,420 - PIL.PngImagePlugin - DEBUG - STREAM b'tEXt' 2741 24
+2025-02-14 16:00:00,420 - PIL.PngImagePlugin - DEBUG - STREAM b'eXIf' 2777 140
+2025-02-14 16:00:00,420 - PIL.PngImagePlugin - DEBUG - STREAM b'IDAT' 2929 62607
+2025-02-14 16:00:00,422 - PIL.PngImagePlugin - DEBUG - STREAM b'IHDR' 16 13
+2025-02-14 16:00:00,422 - PIL.PngImagePlugin - DEBUG - STREAM b'gAMA' 41 4
+2025-02-14 16:00:00,423 - PIL.PngImagePlugin - DEBUG - STREAM b'cHRM' 57 32
+2025-02-14 16:00:00,423 - PIL.PngImagePlugin - DEBUG - STREAM b'iCCP' 101 2607
+2025-02-14 16:00:00,423 - PIL.PngImagePlugin - DEBUG - iCCP profile name b'ICC Profile'
+2025-02-14 16:00:00,423 - PIL.PngImagePlugin - DEBUG - Compression method 0
+2025-02-14 16:00:00,424 - PIL.PngImagePlugin - DEBUG - STREAM b'pHYs' 2720 9
+2025-02-14 16:00:00,424 - PIL.PngImagePlugin - DEBUG - STREAM b'tEXt' 2741 24
+2025-02-14 16:00:00,424 - PIL.PngImagePlugin - DEBUG - STREAM b'eXIf' 2777 140
+2025-02-14 16:00:00,425 - PIL.PngImagePlugin - DEBUG - STREAM b'IDAT' 2929 62607
+2025-02-14 16:00:00,555 - __main__ - INFO - Uso de memória: 108.79 MB
+2025-02-14 16:00:02,564 - PIL.PngImagePlugin - DEBUG - STREAM b'IHDR' 16 13
+2025-02-14 16:00:02,572 - PIL.PngImagePlugin - DEBUG - STREAM b'iCCP' 41 361
+2025-02-14 16:00:02,572 - PIL.PngImagePlugin - DEBUG - iCCP profile name b'ICC Profile'
+2025-02-14 16:00:02,573 - PIL.PngImagePlugin - DEBUG - Compression method 0
+2025-02-14 16:00:02,573 - PIL.PngImagePlugin - DEBUG - STREAM b'pHYs' 414 9
+2025-02-14 16:00:02,574 - PIL.PngImagePlugin - DEBUG - STREAM b'tEXt' 435 24
+2025-02-14 16:00:02,574 - PIL.PngImagePlugin - DEBUG - STREAM b'eXIf' 471 2394
+2025-02-14 16:00:02,575 - PIL.PngImagePlugin - DEBUG - STREAM b'IDAT' 2877 62659
+2025-02-14 16:00:02,808 - PIL.PngImagePlugin - DEBUG - STREAM b'IHDR' 16 13
+2025-02-14 16:00:02,809 - PIL.PngImagePlugin - DEBUG - STREAM b'gAMA' 41 4
+2025-02-14 16:00:02,809 - PIL.PngImagePlugin - DEBUG - STREAM b'cHRM' 57 32
+2025-02-14 16:00:02,809 - PIL.PngImagePlugin - DEBUG - STREAM b'iCCP' 101 2607
+2025-02-14 16:00:02,810 - PIL.PngImagePlugin - DEBUG - iCCP profile name b'ICC Profile'
+2025-02-14 16:00:02,811 - PIL.PngImagePlugin - DEBUG - Compression method 0
+2025-02-14 16:00:02,811 - PIL.PngImagePlugin - DEBUG - STREAM b'pHYs' 2720 9
+2025-02-14 16:00:02,811 - PIL.PngImagePlugin - DEBUG - STREAM b'tEXt' 2741 24
+2025-02-14 16:00:02,812 - PIL.PngImagePlugin - DEBUG - STREAM b'eXIf' 2777 140
+2025-02-14 16:00:02,812 - PIL.PngImagePlugin - DEBUG - STREAM b'IDAT' 2929 62607
+2025-02-14 16:00:02,815 - PIL.PngImagePlugin - DEBUG - STREAM b'IHDR' 16 13
+2025-02-14 16:00:02,816 - PIL.PngImagePlugin - DEBUG - STREAM b'iCCP' 41 2615
+2025-02-14 16:00:02,817 - PIL.PngImagePlugin - DEBUG - iCCP profile name b'sRGB IEC61966-2.1'
+2025-02-14 16:00:02,817 - PIL.PngImagePlugin - DEBUG - Compression method 0
+2025-02-14 16:00:02,818 - PIL.PngImagePlugin - DEBUG - STREAM b'pHYs' 2668 9
+2025-02-14 16:00:02,818 - PIL.PngImagePlugin - DEBUG - STREAM b'IDAT' 2689 8192
+2025-02-14 16:00:02,845 - app.ui.windows.login_window - DEBUG - Credenciais carregadas com sucesso
+2025-02-14 16:00:05,196 - app.database.connection - INFO - Conexão com o banco de dados estabelecida
+2025-02-14 16:00:05,197 - app.ui.windows.login_window - INFO - Atividades ativas do usuário duda foram pausadas durante inicialização do login
+2025-02-14 16:00:06,364 - app.utils.helpers - DEBUG - Ícone configurado para LoginWindow
+2025-02-14 16:00:10,547 - app.database.connection - DEBUG - [DB_QUERY] Executando query: 
+                UPDATE usuarios 
+                SET is_logged_in = FALSE,
+                    updated_at = CURRENT_TIMESTAMP 
+                WHERE is_logged_in = TRUE 
+                AND DATE(updated_at) < CURRENT_DATE
+            
+2025-02-14 16:00:10,550 - app.database.connection - DEBUG - [DB_QUERY] Executando query: 
+                SELECT u.id, u.name_id, u.senha, u.tipo_usuario, u.status, 
+                    u.nome, u.email, u.equipe_id, u.data_entrada,
+                    e.nome as equipe_nome
+                FROM usuarios u
+                LEFT JOIN equipes e ON u.equipe_id = e.id
+                WHERE u.name_id = %s
+            
+2025-02-14 16:00:10,785 - app.database.connection - DEBUG - [DB_QUERY] Executando query: 
+                UPDATE usuarios 
+                SET is_logged_in = TRUE,
+                    updated_at = CURRENT_TIMESTAMP
+                WHERE id = %s
+            
+2025-02-14 16:00:10,789 - app.database.connection - DEBUG - [DB_QUERY] Executando query: SELECT is_logged_in FROM usuarios WHERE id = %s
+2025-02-14 16:00:10,791 - app.ui.windows.login_window - INFO - Usuário wrp logado com sucesso
+2025-02-14 16:00:10,885 - app.utils.window_manager - DEBUG - [WINDOW] Salvou posição do monitor: (1920, 0, 3840, 1080)
+2025-02-14 16:00:10,885 - app.utils.window_manager - DEBUG - [WINDOW] Usando monitor da janela pai: (1920, 0, 3840, 1080)
+2025-02-14 16:00:10,889 - app.utils.window_manager - DEBUG - [WINDOW] Posicionando UserWindow em monitor (1920, 0, 3840, 1080)
+2025-02-14 16:00:10,889 - app.utils.window_manager - DEBUG - [WINDOW] Geometria calculada: 1400x700+2180+190
+2025-02-14 16:00:10,891 - app.ui.components.system_tray_icon - DEBUG - Classe de janela registrada com sucesso
+2025-02-14 16:00:10,891 - app.database.connection - DEBUG - [DB_QUERY] Executando query: 
+                SELECT base_value 
+                FROM usuarios 
+                WHERE id = %(user_id)s
+            
+2025-02-14 16:00:10,896 - app.ui.windows.user_window - DEBUG - [BASE_VALUE] Valor base atualizado: 0.0
+2025-02-14 16:00:10,897 - app.core.time.time_state - DEBUG - [STATE_RESET] ---- Iniciando reset completo ----
+2025-02-14 16:00:10,898 - app.core.time.time_state - DEBUG - [STATE_RESET] Estado anterior:
+2025-02-14 16:00:10,899 - app.core.time.time_state - DEBUG -   - Modo: regressivo
+2025-02-14 16:00:10,901 - app.core.time.time_state - DEBUG -   - Timer Value: 0:00:00
+2025-02-14 16:00:10,901 - app.core.time.time_state - DEBUG -   - Total Time: 0:00:00
+2025-02-14 16:00:10,902 - app.core.time.time_state - DEBUG - [STATE_RESET] Novo estado:
+2025-02-14 16:00:10,902 - app.core.time.time_state - DEBUG -   - Modo: regressivo
+2025-02-14 16:00:10,903 - app.core.time.time_state - DEBUG -   - Timer Value: 0:00:00
+2025-02-14 16:00:10,903 - app.core.time.time_state - DEBUG -   - Total Time: 0:00:00
+2025-02-14 16:00:10,904 - app.core.time.time_state - DEBUG - [STATE_RESET] ---- Reset completo finalizado ----
+2025-02-14 16:00:10,904 - app.core.idleness.idle_detector - INFO - IdleDetector inicializado
+2025-02-14 16:00:10,905 - app.core.idleness.idle_detector - DEBUG - Observer adicionado: TimeManager
+2025-02-14 16:00:10,916 - app.core.idleness.idle_detector - INFO - IdleDetector iniciado com sucesso
+2025-02-14 16:00:10,917 - app.core.time.time_observer - DEBUG - Observer adicionado: UserWindow
+2025-02-14 16:00:10,917 - app.database.connection - DEBUG - [DB_QUERY] Executando query: 
+                SELECT unlock_control 
+                FROM user_lock_unlock 
+                WHERE user_id = %s
+            
+2025-02-14 16:00:10,919 - app.core.time.lock_observer - DEBUG - [LOCK] Nenhum estado encontrado para usuário 3
+2025-02-14 16:00:10,919 - app.core.time.time_observer - DEBUG - Observer adicionado: UserWindow
+2025-02-14 16:00:10,928 - app.ui.notifications.notification_manager - WARNING - Ícone não encontrado: j:\Adm Tec\Documentos Scaneados\wrp\Documentos\Python\Chronos\app\icons/afternoon.ico
+2025-02-14 16:00:10,942 - app.ui.notifications.notification_manager - INFO - Notificação enviada: Boa tarde \u2600\ufe0f
+2025-02-14 16:00:10,945 - app.ui.notifications.notification_manager - DEBUG - Mensagem de boa tarde exibida para wrp às 16h
+2025-02-14 16:00:10,951 - app.ui.notifications.notification_manager - DEBUG - Lembrete de água agendado para 1h após login
+2025-02-14 16:00:11,007 - app.database.connection - DEBUG - [DB_QUERY] Executando query: 
+                SELECT id, description, atividade, start_time, end_time, 
+                    ativo, pausado, concluido
+                FROM atividades 
+                WHERE user_id = %s
+                AND ativo = TRUE 
+                AND concluido = FALSE
+                AND pausado = FALSE
+                LIMIT 1
+            
+2025-02-14 16:00:11,015 - app.core.time.time_observer - DEBUG - Observer adicionado: ActivityControls
+2025-02-14 16:00:11,016 - app.database.connection - DEBUG - [DB_QUERY] Executando query: 
+                SELECT unlock_control 
+                FROM user_lock_unlock 
+                WHERE user_id = %s
+            
+2025-02-14 16:00:11,018 - app.core.time.lock_observer - DEBUG - [LOCK] Nenhum estado encontrado para usuário 3
+2025-02-14 16:00:11,018 - app.ui.components.activities.activity_controls - DEBUG - [CONTROLS] Estados atualizados com bloqueio: False
+2025-02-14 16:00:11,074 - PIL.PngImagePlugin - DEBUG - STREAM b'IHDR' 16 13
+2025-02-14 16:00:11,078 - PIL.PngImagePlugin - DEBUG - STREAM b'sRGB' 41 1
+2025-02-14 16:00:11,081 - PIL.PngImagePlugin - DEBUG - STREAM b'gAMA' 54 4
+2025-02-14 16:00:11,081 - PIL.PngImagePlugin - DEBUG - STREAM b'pHYs' 70 9
+2025-02-14 16:00:11,081 - PIL.PngImagePlugin - DEBUG - STREAM b'tEXt' 91 24
+2025-02-14 16:00:11,082 - PIL.PngImagePlugin - DEBUG - STREAM b'eXIf' 127 182
+2025-02-14 16:00:11,085 - PIL.PngImagePlugin - DEBUG - STREAM b'IDAT' 321 3649
+2025-02-14 16:00:11,139 - app.database.connection - DEBUG - [DB_QUERY] Executando query: 
+                SELECT id, description, atividade, start_time, end_time, 
+                       ativo, pausado, concluido
+                FROM atividades 
+                WHERE user_id = %s
+                AND ativo = TRUE 
+                AND concluido = FALSE
+                AND pausado = FALSE
+                LIMIT 1
+            
+2025-02-14 16:00:11,164 - app.ui.components.activities.activity_table - DEBUG - [TABLE] Executando atualização periódica
+2025-02-14 16:00:11,185 - app.utils.window_manager - DEBUG - [WINDOW] Salvou posição do monitor: (1920, 0, 3840, 1080)
+2025-02-14 16:00:11,185 - app.utils.window_manager - DEBUG - [WINDOW] Usando monitor da janela pai: (1920, 0, 3840, 1080)
+2025-02-14 16:00:11,188 - app.utils.window_manager - DEBUG - [WINDOW] Posicionando UserWindow em monitor (1920, 0, 3840, 1080)
+2025-02-14 16:00:11,193 - app.utils.window_manager - DEBUG - [WINDOW] Geometria calculada: 1400x700+2180+190
+2025-02-14 16:00:11,195 - app.ui.notifications.notification_manager - WARNING - Ícone não encontrado: j:\Adm Tec\Documentos Scaneados\wrp\Documentos\Python\Chronos\app\icons/afternoon.ico
+2025-02-14 16:00:11,210 - app.ui.notifications.notification_manager - INFO - Notificação enviada: Boa tarde \u2600\ufe0f
+2025-02-14 16:00:11,224 - app.ui.notifications.notification_manager - DEBUG - Mensagem de boa tarde exibida para wrp às 16h
+2025-02-14 16:00:11,239 - app.ui.windows.login_window - DEBUG - Credenciais salvas com sucesso
+2025-02-14 16:00:11,256 - app.utils.helpers - DEBUG - Ícone configurado para UserWindow
+2025-02-14 16:00:11,452 - app.ui.components.activities.activity_table - DEBUG - [TABLE] Iniciando atualização periódica - 16:00:11
+2025-02-14 16:00:11,456 - app.ui.components.logic.activity_table_logic - DEBUG - [FILTER] Buscando atividades - Período: Dia
+2025-02-14 16:00:11,458 - app.database.connection - DEBUG - [DB_QUERY] Executando query: 
+                SELECT 
+                    id,
+                    description,
+                    atividade,
+                    DATE_FORMAT(start_time, '%d/%m/%Y %H:%i') as start_time,
+                    DATE_FORMAT(end_time, '%d/%m/%Y %H:%i') as end_time,
+                    DATE_FORMAT(updated_at, '%d/%m/%Y %H:%i') as updated_at,
+                    COALESCE(time_exceeded, '00:00:00') as time_exceeded,
+                    COALESCE(total_time, '00:00:00') as total_time,
+                    CASE
+                        WHEN concluido THEN 'Concluído'
+                        WHEN pausado THEN 'Pausado'
+                        WHEN ativo THEN 'Ativo'
+                        ELSE 'Inativo'
+                    END as status,
+                    COALESCE(ativo, FALSE) as ativo,
+                    COALESCE(pausado, FALSE) as pausado,
+                    COALESCE(concluido, FALSE) as concluido
+                FROM atividades
+                WHERE user_id = %s
+             AND (
+                    DATE(start_time) = CURRENT_DATE() OR 
+                    DATE(updated_at) = CURRENT_DATE()
+                )
+                ORDER BY 
+                    CASE 
+                        WHEN ativo = TRUE THEN 1
+                        WHEN pausado = TRUE THEN 2
+                        WHEN concluido = TRUE THEN 3
+                        ELSE 4
+                    END,
+                    CASE 
+                        WHEN DATE(updated_at) = CURRENT_DATE() THEN updated_at
+                        ELSE start_time
+                    END DESC
+            
+2025-02-14 16:00:11,461 - app.ui.components.activities.activity_table - DEBUG - [TABLE] Atualização concluída - 16:00:11
+2025-02-14 16:00:15,852 - app.database.connection - DEBUG - [DB_QUERY] Executando query: 
+                    SELECT id FROM atividades 
+                    WHERE user_id = %s
+                    AND ativo = TRUE 
+                    AND concluido = FALSE
+                    AND pausado = FALSE
+                    LIMIT 1
+                
+2025-02-14 16:00:15,854 - app.core.time.time_observer - DEBUG - Observer removido: UserWindow
+2025-02-14 16:00:15,854 - app.core.time.time_observer - DEBUG - Observer removido: UserWindow
+2025-02-14 16:00:15,855 - app.ui.windows.user_window - DEBUG - Observadores removidos com sucesso durante logout
+2025-02-14 16:00:15,856 - app.ui.components.system_tray_icon - ERROR - Erro durante cleanup: (-2147467259, 'Shell_NotifyIcon', 'Erro não especificado')
+2025-02-14 16:00:16,057 - app.ui.windows.user_window - INFO - Usuário realizou logout
+2025-02-14 16:00:16,067 - app.ui.components.system_tray_icon - ERROR - Erro durante cleanup: (-2147467259, 'Shell_NotifyIcon', 'Erro não especificado')
+2025-02-14 16:00:20,889 - app.database.connection - DEBUG - [DB_QUERY] Executando query: 
+                UPDATE usuarios 
+                SET is_logged_in = FALSE,
+                    updated_at = CURRENT_TIMESTAMP 
+                WHERE is_logged_in = TRUE 
+                AND DATE(updated_at) < CURRENT_DATE
+            
+2025-02-14 16:00:20,890 - app.database.connection - DEBUG - [DB_QUERY] Executando query: 
+                SELECT u.id, u.name_id, u.senha, u.tipo_usuario, u.status, 
+                    u.nome, u.email, u.equipe_id, u.data_entrada,
+                    e.nome as equipe_nome
+                FROM usuarios u
+                LEFT JOIN equipes e ON u.equipe_id = e.id
+                WHERE u.name_id = %s
+            
+2025-02-14 16:00:25,066 - app.database.connection - DEBUG - [DB_QUERY] Executando query: 
+                UPDATE usuarios 
+                SET is_logged_in = FALSE,
+                    updated_at = CURRENT_TIMESTAMP 
+                WHERE is_logged_in = TRUE 
+                AND DATE(updated_at) < CURRENT_DATE
+            
+2025-02-14 16:00:25,069 - app.database.connection - DEBUG - [DB_QUERY] Executando query: 
+                SELECT u.id, u.name_id, u.senha, u.tipo_usuario, u.status, 
+                    u.nome, u.email, u.equipe_id, u.data_entrada,
+                    e.nome as equipe_nome
+                FROM usuarios u
+                LEFT JOIN equipes e ON u.equipe_id = e.id
+                WHERE u.name_id = %s
+            
+2025-02-14 16:00:25,303 - app.database.connection - DEBUG - [DB_QUERY] Executando query: 
+                UPDATE usuarios 
+                SET is_logged_in = TRUE,
+                    updated_at = CURRENT_TIMESTAMP
+                WHERE id = %s
+            
+2025-02-14 16:00:25,311 - app.database.connection - DEBUG - [DB_QUERY] Executando query: SELECT is_logged_in FROM usuarios WHERE id = %s
+2025-02-14 16:00:25,313 - app.ui.windows.login_window - INFO - Usuário duda logado com sucesso
+2025-02-14 16:00:25,398 - app.utils.window_manager - DEBUG - [WINDOW] Salvou posição do monitor: (1920, 0, 3840, 1080)
+2025-02-14 16:00:25,407 - app.utils.window_manager - DEBUG - [WINDOW] Usando monitor da janela pai: (1920, 0, 3840, 1080)
+2025-02-14 16:00:25,409 - app.utils.window_manager - DEBUG - [WINDOW] Posicionando UserWindow em monitor (1920, 0, 3840, 1080)
+2025-02-14 16:00:25,410 - app.utils.window_manager - DEBUG - [WINDOW] Geometria calculada: 1400x700+2180+190
+2025-02-14 16:00:25,412 - app.database.connection - DEBUG - [DB_QUERY] Executando query: 
+                SELECT base_value 
+                FROM usuarios 
+                WHERE id = %(user_id)s
+            
+2025-02-14 16:00:25,416 - app.ui.windows.user_window - DEBUG - [BASE_VALUE] Valor base atualizado: 0.0
+2025-02-14 16:00:25,416 - app.core.time.time_observer - DEBUG - Observer adicionado: UserWindow
+2025-02-14 16:00:25,417 - app.database.connection - DEBUG - [DB_QUERY] Executando query: 
+                SELECT unlock_control 
+                FROM user_lock_unlock 
+                WHERE user_id = %s
+            
+2025-02-14 16:00:25,418 - app.core.time.lock_observer - DEBUG - [LOCK] Nenhum estado encontrado para usuário 2
+2025-02-14 16:00:25,418 - app.core.time.time_observer - DEBUG - Observer adicionado: UserWindow
+2025-02-14 16:00:25,420 - app.ui.notifications.notification_manager - WARNING - Ícone não encontrado: j:\Adm Tec\Documentos Scaneados\wrp\Documentos\Python\Chronos\app\icons/afternoon.ico
+2025-02-14 16:00:25,439 - app.ui.notifications.notification_manager - INFO - Notificação enviada: Boa tarde \u2600\ufe0f
+2025-02-14 16:00:25,443 - app.ui.notifications.notification_manager - DEBUG - Mensagem de boa tarde exibida para Duda às 16h
+2025-02-14 16:00:25,445 - app.ui.notifications.notification_manager - DEBUG - Lembrete de água agendado para 1h após login
+2025-02-14 16:00:25,512 - app.database.connection - DEBUG - [DB_QUERY] Executando query: 
+                SELECT id, description, atividade, start_time, end_time, 
+                    ativo, pausado, concluido
+                FROM atividades 
+                WHERE user_id = %s
+                AND ativo = TRUE 
+                AND concluido = FALSE
+                AND pausado = FALSE
+                LIMIT 1
+            
+2025-02-14 16:00:25,520 - app.core.time.time_observer - DEBUG - Observer adicionado: ActivityControls
+2025-02-14 16:00:25,520 - app.database.connection - DEBUG - [DB_QUERY] Executando query: 
+                SELECT unlock_control 
+                FROM user_lock_unlock 
+                WHERE user_id = %s
+            
+2025-02-14 16:00:25,527 - app.core.time.lock_observer - DEBUG - [LOCK] Nenhum estado encontrado para usuário 2
+2025-02-14 16:00:25,528 - app.ui.components.activities.activity_controls - DEBUG - [CONTROLS] Estados atualizados com bloqueio: False
+2025-02-14 16:00:25,534 - PIL.PngImagePlugin - DEBUG - STREAM b'IHDR' 16 13
+2025-02-14 16:00:25,539 - PIL.PngImagePlugin - DEBUG - STREAM b'sRGB' 41 1
+2025-02-14 16:00:25,540 - PIL.PngImagePlugin - DEBUG - STREAM b'gAMA' 54 4
+2025-02-14 16:00:25,543 - PIL.PngImagePlugin - DEBUG - STREAM b'pHYs' 70 9
+2025-02-14 16:00:25,543 - PIL.PngImagePlugin - DEBUG - STREAM b'tEXt' 91 24
+2025-02-14 16:00:25,544 - PIL.PngImagePlugin - DEBUG - STREAM b'eXIf' 127 182
+2025-02-14 16:00:25,547 - PIL.PngImagePlugin - DEBUG - STREAM b'IDAT' 321 3649
+2025-02-14 16:00:25,597 - app.database.connection - DEBUG - [DB_QUERY] Executando query: 
+                SELECT id, description, atividade, start_time, end_time, 
+                       ativo, pausado, concluido
+                FROM atividades 
+                WHERE user_id = %s
+                AND ativo = TRUE 
+                AND concluido = FALSE
+                AND pausado = FALSE
+                LIMIT 1
+            
+2025-02-14 16:00:25,612 - app.ui.components.activities.activity_table - DEBUG - [TABLE] Executando atualização periódica
+2025-02-14 16:00:25,617 - app.utils.window_manager - DEBUG - [WINDOW] Salvou posição do monitor: (1920, 0, 3840, 1080)
+2025-02-14 16:00:25,617 - app.utils.window_manager - DEBUG - [WINDOW] Usando monitor da janela pai: (1920, 0, 3840, 1080)
+2025-02-14 16:00:25,619 - app.utils.window_manager - DEBUG - [WINDOW] Posicionando UserWindow em monitor (1920, 0, 3840, 1080)
+2025-02-14 16:00:25,620 - app.utils.window_manager - DEBUG - [WINDOW] Geometria calculada: 1400x700+2180+190
+2025-02-14 16:00:25,620 - app.ui.notifications.notification_manager - WARNING - Ícone não encontrado: j:\Adm Tec\Documentos Scaneados\wrp\Documentos\Python\Chronos\app\icons/afternoon.ico
+2025-02-14 16:00:25,637 - app.ui.notifications.notification_manager - INFO - Notificação enviada: Boa tarde \u2600\ufe0f
+2025-02-14 16:00:25,639 - app.ui.notifications.notification_manager - DEBUG - Mensagem de boa tarde exibida para Duda às 16h
+2025-02-14 16:00:25,649 - app.ui.windows.login_window - DEBUG - Credenciais salvas com sucesso
+2025-02-14 16:00:25,652 - app.utils.helpers - DEBUG - Ícone configurado para UserWindow
+2025-02-14 16:00:25,803 - app.ui.components.activities.activity_table - DEBUG - [TABLE] Iniciando atualização periódica - 16:00:25
+2025-02-14 16:00:25,806 - app.ui.components.logic.activity_table_logic - DEBUG - [FILTER] Buscando atividades - Período: Dia
+2025-02-14 16:00:25,810 - app.database.connection - DEBUG - [DB_QUERY] Executando query: 
+                SELECT 
+                    id,
+                    description,
+                    atividade,
+                    DATE_FORMAT(start_time, '%d/%m/%Y %H:%i') as start_time,
+                    DATE_FORMAT(end_time, '%d/%m/%Y %H:%i') as end_time,
+                    DATE_FORMAT(updated_at, '%d/%m/%Y %H:%i') as updated_at,
+                    COALESCE(time_exceeded, '00:00:00') as time_exceeded,
+                    COALESCE(total_time, '00:00:00') as total_time,
+                    CASE
+                        WHEN concluido THEN 'Concluído'
+                        WHEN pausado THEN 'Pausado'
+                        WHEN ativo THEN 'Ativo'
+                        ELSE 'Inativo'
+                    END as status,
+                    COALESCE(ativo, FALSE) as ativo,
+                    COALESCE(pausado, FALSE) as pausado,
+                    COALESCE(concluido, FALSE) as concluido
+                FROM atividades
+                WHERE user_id = %s
+             AND (
+                    DATE(start_time) = CURRENT_DATE() OR 
+                    DATE(updated_at) = CURRENT_DATE()
+                )
+                ORDER BY 
+                    CASE 
+                        WHEN ativo = TRUE THEN 1
+                        WHEN pausado = TRUE THEN 2
+                        WHEN concluido = TRUE THEN 3
+                        ELSE 4
+                    END,
+                    CASE 
+                        WHEN DATE(updated_at) = CURRENT_DATE() THEN updated_at
+                        ELSE start_time
+                    END DESC
+            
+2025-02-14 16:00:25,817 - app.ui.components.activities.activity_table - DEBUG - [TABLE] Atualização concluída - 16:00:25
+2025-02-14 16:00:28,744 - app.database.connection - DEBUG - [DB_QUERY] Executando query: 
+                    SELECT id FROM atividades 
+                    WHERE user_id = %s
+                    AND ativo = TRUE 
+                    AND concluido = FALSE
+                    AND pausado = FALSE
+                    LIMIT 1
+                
+2025-02-14 16:00:28,746 - app.core.time.time_observer - DEBUG - Observer removido: UserWindow
+2025-02-14 16:00:28,747 - app.core.time.time_observer - DEBUG - Observer removido: UserWindow
+2025-02-14 16:00:28,747 - app.ui.windows.user_window - DEBUG - Observadores removidos com sucesso durante logout
+2025-02-14 16:00:28,748 - app.ui.components.system_tray_icon - ERROR - Erro durante cleanup: (-2147467259, 'Shell_NotifyIcon', 'Erro não especificado')
+2025-02-14 16:00:28,950 - app.ui.windows.user_window - INFO - Usuário realizou logout
+2025-02-14 16:00:28,971 - app.ui.components.system_tray_icon - ERROR - Erro durante cleanup: (-2147467259, 'Shell_NotifyIcon', 'Erro não especificado')

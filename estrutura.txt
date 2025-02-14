@@ -1,0 +1,113 @@
+chronos/
+├── app/
+│   ├── config/
+│   │   ├── __init__.py
+│   │   └── settings.py                    # Configurações globais da aplicação
+│   │
+│   ├── core/
+│   │   ├── __init__.py
+│   │   ├── activity/                      # Módulo de gerenciamento de atividades
+│   │   │   ├── __init__.py
+│   │   │   ├── activity_manager.py        # Gerenciamento central de atividades
+│   │   │   └── activity_validator.py      # Validação de atividades
+│   │   │
+│   │   ├── idleness/                      # Ociosidade
+│   │   │   ├── __init__.py
+│   │   │   └── idle_detector.py           # Classe ociosidade
+│   │   │
+│   │   ├── lock/                          # Bloqueio
+│   │   │   ├── __init__.py
+│   │   │   └── lock_manager.py            # Gerenciamento de bloqueio
+│   │   │
+│   │   ├── printer/                       # Módulo de relatórios
+│   │   │   ├── __init__.py
+│   │   │   ├── printer.py                 # Classe base de impressão
+│   │   │   ├── observer/                  # Módulo de consultas
+│   │   │   │   ├── __init__.py
+│   │   │   │   └── base_value_observer.py # Observador de valor base
+│   │   │   ├── query/                     # Módulo de consultas
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── dashboard_query.py     # Consulta do dashboard
+│   │   │   │   └── query_activities.py    # Consulta de atividades
+│   │   │   └── templates/                 # Templates de impressão
+│   │   │      ├── __init__.py
+│   │   │      ├── activities_printer.py    # Impressão de atividades
+│   │   │      └── dashboard_printer.py    # Impressão do dashboard
+│   │   │
+│   │   └── time/                          # Módulo de gerenciamento de tempo
+│   │       ├── __init__.py
+│   │       ├── daily_time_manager.py      # Gerenciamento de tempo diário
+│   │       ├── lock_observer.py
+│   │       ├── time_controller.py         # Controlador de tempo (timer/cronômetro)
+│   │       ├── time_exceeded_observer.py   # Observador de tempo excedido
+│   │       ├── time_formatter.py          # Formatação de tempo 
+│   │       ├── time_manager.py            # Gerenciamento central de tempo
+│   │       ├── time_observer.py           # Interface para observers de tempo
+│   │       └── time_state.py              # Estado do timer
+│   │
+│   ├── database/
+│   │   ├── __init__.py
+│   │   └── connection.py                    # Gerenciamento de conexão com banco
+│   │
+│   ├── ui/
+│   │   ├── __init__.py
+│   │   ├── components/
+│   │   │   ├── __init__.py
+│   │   │   ├── system_tray_icon.py
+│   │   │   └── activities/                   # Componentes de atividades
+│   │   │       ├── __init__.py
+│   │   │       ├── activity_controls.py      # Controles de atividades
+│   │   │       ├── activity_form.py          # Formulário de atividades
+│   │   │       └── activity_table.py         # Tabela de atividades
+│   │   │
+│   │   ├── logic/                            # Lógica dos componentes
+│   │   │   ├── __init__.py
+│   │   │   ├── activity_controls_logic.py
+│   │   │   ├── activity_form_logic.py
+│   │   │   └── activity_table_logic.py
+│   │   │
+│   │   ├── dialogs/                           # Diálogos do sistema
+│   │   │   ├── __init__.py
+│   │   │   ├── activities_printer_dialog.py   # Interface de impressão de atividades
+│   │   │   ├── change_password_dialog.py      # Interface de alteração de senha
+│   │   │   ├── dashboard_daily.py             # Interface do dashboard
+│   │   │   ├── perfil_dialog.py               # Interface de perfil
+│   │   │   ├── reason_exceeded_dialog.py      # Motivo do tempo excedido
+│   │   │   ├── register_dialog.py             # cadastro/edição de usuários
+│   │   │   ├── search_dialog.py               # pesquisa
+│   │   │   └── user_management_dialog.py      # gerenciamento de usuários
+│   │   │
+│   │   ├── notifications/                     # Novo módulo de notificações
+│   │   │   ├── __init__.py
+│   │   │   └── notification_manager.py        # Renomeado para melhor clareza
+│   │   │ 
+│   │   └── windows/                           # Janelas principais
+│   │       ├── __init__.py
+│   │       ├── admin_window.py                # Interface usuário administrador
+│   │       ├── login_window.py                # Interface login
+│   │       └── user_window.py                 # Interface usuário comum
+│   │
+│   └── utils/
+│       ├── __init__.py
+│       ├── excel_processor.py             # Processamento de Excel
+│       ├── excel_selector.py              # Movido para utils
+│       ├── helpers.py                     # Funções auxiliares gerais
+│       └── tooltip.py                     # Funções auxiliares para tooltips
+│
+├── icons/
+│   ├── logo.png          			        # Ícone padrão do app
+│   ├── morning.png       		            # Ícone de bom dia
+│   ├── break.png         		            # Ícone de intervalo
+│   ├── water.png     	  			        # Ícone de lembrete de água
+│   ├── warning.png     			        # Ícone de tempo excedido
+│   ├── excel_exportar.png			        # Ícone de exportação
+│   ├── excel_procurar.png			        # Ícone de exportação
+│   ├── moon.png          			        # Ícone de fim de expediente
+│   ├── return.png        			        # Ícone de retorno do intervalo
+│   └── early.png         			        # Ícone de inicio de expediente
+│
+├── logs/
+│   └── app.log                           # Logs do sistema
+│
+├── requirements.txt                      # Dependências do projeto
+└── main.py                               # Ponto de entrada da aplicação

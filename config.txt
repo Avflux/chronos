@@ -1,0 +1,2 @@
+DAILY_EXCEL_PATH=C:/Users/WRP/Downloads/2024 - WESDLEY RAMOS PEDRO DA SILVA.xlsx
+SELECTOR_EXCEL_PATH=J:/Adm Tec/Apropriação de Horas/2025/2025_Plano de Contas.xlsx
